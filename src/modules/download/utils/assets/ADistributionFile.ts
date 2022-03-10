@@ -7,6 +7,21 @@ export default abstract class ADistributionFile {
 
     public abstract isValid(): boolean;
 
+    public getPath(version: string): string {
+        switch (this.type) {
+            case FileType.ASSET:
+                return "assets";
+            case FileType.NATIVE:
+                return version + "/natives";
+            case FileType.LIBRARY:
+                return "libraries";
+            case FileType.MOD:
+                return "mods";
+            default:
+                return "";
+        }
+    }
+
 }
 
 export enum FileType {
