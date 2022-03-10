@@ -1,0 +1,23 @@
+{
+  "name": "mclaunch",
+  "version": "1.0.0",
+  "description": "NodeJS library for Minecraft Launcher",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "npx tsc",
+    "dev": "npx tsc -watch"
+  },
+  "keywords": [
+    "minecraft",
+    "launcher",
+    "nodejs",
+    "js",
+    "electron"
+  ],
+  "author": "Zeldown,Samxvdhn,Galtrips",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "typescript": "^4.6.2"
+  }
+}

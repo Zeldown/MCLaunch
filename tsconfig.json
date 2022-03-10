@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+
+        "module": "esnext",
+        "target": "esnext",
+
+        "noEmitOnError": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "noImplicitAny": true
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}
