@@ -1,12 +1,14 @@
 import BaseDistribution from "./BaseDistribution";
+import MCLaunchDistribution from "./MCLaunchDistribution";
 import MinecraftDistribution from "./MinecraftDistribution";
 
 export default class DistributionManager {
 
-    distributions: BaseDistribution[] = [];
+    public distributions: BaseDistribution[] = [];
 
     constructor() {
-        this.distributions.push(new MinecraftDistribution());
+        this.registerDistribution(new MinecraftDistribution());
+        this.registerDistribution(new MCLaunchDistribution());
     }
 
     public registerDistribution(distribution: BaseDistribution): void {
@@ -14,5 +16,3 @@ export default class DistributionManager {
     }
 
 }
-
-module.exports = DistributionManager;

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "NodeJS library for Minecraft Launcher",
   "main": "dist/index.js",
+  "type": "commonjs",
   "scripts": {
     "compile": "npx tsc",
     "dev": "npx tsc -watch"

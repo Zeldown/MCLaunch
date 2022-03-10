@@ -23,6 +23,6 @@ export default abstract class BaseDistribution {
     public natives!: DistributionNative[];
     public others!: ADistributionFile[];
 
-    abstract parse(): boolean
+    abstract parse(json: string): boolean
 
 }

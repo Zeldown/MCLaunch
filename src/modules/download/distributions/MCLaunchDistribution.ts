@@ -1,11 +1,11 @@
 import DistributionClient from '../utils/DistributionClient';
 import BaseDistribution from './BaseDistribution';
 
-export default class MinecraftDistribution extends BaseDistribution {
+export default class MCLaunchDistribution extends BaseDistribution {
 
     parse(json: string): boolean {
         this.maintenance = false;
-        this.name = 'MinecraftLauncher';
+        this.name = 'MCLaunch';
         this.version = '1.0.0';
 
         this.gameArguments = [];
@@ -21,7 +21,7 @@ export default class MinecraftDistribution extends BaseDistribution {
         this.natives = [];
         this.others = [];
 
-        return false;
+        return true;
     }
 
 }
